@@ -41,3 +41,20 @@ git remote add origin https://github.com/dugersurenserver/git.git
 git branch -M main
 
 git push -u origin main
+
+
+
+LINUX үйлдлийн системд хэрэглэгч нэмэх, эрх олгох үүрэгтэй командууд
+
+nano /etc/passwd 
+useradd -c "Dugersuren Battsend" -m -s /bin/bash bd
+
+userdel bd 
+userdel -r bd
+
+
+useradd -c "Dugersuren Battsend" -m -s /bin/bash bd
+useradd -c "Munkhbayar Nayantai" -m -s /bin/bash munkhbayar
+
+Эрхүүдийг олгож өгөх
+sudo visudo
