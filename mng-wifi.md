@@ -9,6 +9,9 @@ netsh interface ip set dns name="Wi-Fi" static 8.8.8.8
 
 ```
 
+http://10.10.10.8:8888/
+
+IT Olimpiad
 
 
 
