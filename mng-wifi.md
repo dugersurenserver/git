@@ -1,11 +1,11 @@
 ```cmd
-netsh wlan add filter permission=allow ssid="LAB.exe" networktype=infrastructure
+netsh wlan add filter permission=allow ssid="lab.exe_WiFi7" networktype=infrastructure
 netsh wlan add filter permission=denyall networktype=infrastructure
-netsh wlan set profileparameter name="LAB.exe" connectionmode=auto
+netsh wlan set profileparameter name="lab.exe_WiFi7" connectionmode=auto
 netsh interface ip set dns name="Wi-Fi" static 8.8.8.8
 netsh wlan show filters
 netsh interface show interface
-netsh interface ip set address name="Wi-Fi 2" static 10.10.80.211 255.255.255.0 10.10.80.1
+netsh interface ip set address name="Wi-Fi 2" static 10.10.80.201 255.255.255.0 10.10.80.1
 
 
 ```
