@@ -10,6 +10,13 @@ netsh interface ip set address name="Wi-Fi 2" static 10.10.80.201 255.255.255.0 
 
 ```
 
+```cmd
+103.10.20.10
+103.10.22.254
+```
+
+
+
 http://10.10.10.8:8888/
 
 IT Olimpiad
