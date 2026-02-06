@@ -173,7 +173,7 @@ netsh wlan add profile filename="C:\WiFi\lab.exe_WiFi7.xml" user=all
             <sharedKey>
                 <keyType>passPhrase</keyType>
                 <protected>false</protected>
-                <keyMaterial>WiFi_Нууц_Үг</keyMaterial>
+                <keyMaterial>1@b0r@t0ry.3x3</keyMaterial>
             </sharedKey>
         </security>
     </MSM>
