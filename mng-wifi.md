@@ -134,3 +134,53 @@ CMD → netsh wlan filter
 Task Scheduler-т Logon дээр автоматаар ажиллахаар тохируулж өгье
 
 30+ PC-д mass deployment хийх схем гаргаж өгье
+
+
+
+
+
+```cmd
+
+WiFi/lab.exe_WiFi7.xml
+
+
+netsh wlan add profile filename="C:\WiFi\lab.exe_WiFi7.xml" user=all
+```
+
+
+```cmd
+<?xml version="1.0"?>
+<WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
+    <name>lab.exe_WiFi7</name>
+
+    <SSIDConfig>
+        <SSID>
+            <name>lab.exe_WiFi7</name>
+        </SSID>
+        <nonBroadcast>true</nonBroadcast>
+    </SSIDConfig>
+
+    <connectionType>ESS</connectionType>
+    <connectionMode>auto</connectionMode>
+
+    <MSM>
+        <security>
+            <authEncryption>
+                <authentication>WPA2PSK</authentication>
+                <encryption>AES</encryption>
+                <useOneX>false</useOneX>
+            </authEncryption>
+            <sharedKey>
+                <keyType>passPhrase</keyType>
+                <protected>false</protected>
+                <keyMaterial>WiFi_Нууц_Үг</keyMaterial>
+            </sharedKey>
+        </security>
+    </MSM>
+</WLANProfile>
+```
+
+
+
+
+
